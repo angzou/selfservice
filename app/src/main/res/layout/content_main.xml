@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetDetail"
+    android:layout_width="match_parent"
+    android:layout_height="114dp"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/colorOrange900"
+        >
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="38dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_more"
+            android:contentDescription=""
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorOrange400"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="2dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitCenter"
+                android:contentDescription=""
+                android:src="@drawable/icon_rincian_gaji"/>
+
+            <com.jasamarga.selfservice.customwiget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:text="Rincian\nPendapatan"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                app:customFont="arial.ttf"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorWhite">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitCenter"
+                android:contentDescription=""
+                android:src="@drawable/icon_rincian_potongan"/>
+
+            <com.jasamarga.selfservice.customwiget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorWhite"
+                android:text="Rincian\nPotongan"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                app:customFont="arial.ttf"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

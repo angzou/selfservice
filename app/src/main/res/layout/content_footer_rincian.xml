@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:weightSum="10">
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text="Total Gaji"
+            android:gravity="left"
+            android:layout_marginLeft="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text=":"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvTotalGaji"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text="Rp. 20.000.000"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:weightSum="10">
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text="Total Potongan"
+            android:gravity="left"
+            android:layout_marginLeft="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text=":"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvTotalPotongan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text="Rp. 20.000.000"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:weightSum="10">
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text="Penerimaan Bersih"
+            android:gravity="left"
+            android:layout_marginLeft="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text=":"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvPenerimaanBersih"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey900"
+            android:text="Rp. 20.000.000"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+    </LinearLayout>
+
+</LinearLayout>

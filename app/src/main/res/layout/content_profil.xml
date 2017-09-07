@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_personalinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_title_personalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/colorBlueMicrosoft"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llHeaderProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tv_header_personalinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROFIL"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="60sp"
+                    android:shadowColor="@color/colorBlueMicrosoft1"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Bold.otf"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bordertitle_personalinfo"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:orientation="vertical"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvNameProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="36dp"
+                    android:text="Agus Sofian"
+                    android:textColor="@color/colorWhite"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvJabatanProfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/personal_position"
+                    android:textColor="@color/colorWhite"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="2.5dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/card_bg"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="@string/personal_status"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvStatusPeg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="-"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="@string/personal_kantor_pusat"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvAlamatKantor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="-"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="@string/personal_ttl"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvTmptLahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="-"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="@string/personal_agama_gender"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="-"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="@string/personal_alamat"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="-"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="@string/personal_kontak"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvKontak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="-"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_hierarki_personalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:visibility="gone"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_content_rekan_personalinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layerType="software"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/card_bg"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_contentatasan_personalinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"
+                    >
+
+                    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+                        android:id="@+id/civ_atasan_personalinfo"
+                        android:layout_width="@dimen/civ_logo_cabang_slide"
+                        android:layout_height="@dimen/civ_logo_cabang_slide"
+                        android:background="@color/colorTransparent"
+                        android:src="@drawable/placeholder"
+                        app:stroke_color="@color/colorOrange400"
+                        app:stroke_width="2dp"
+                        app:shape_mode="round_rect"
+                        app:round_radius="15dp"
+                        />
+
+                    <com.jasamarga.selfservice.customwiget.CustomTextView
+                        android:id="@+id/tv_atasan_personalinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorBlueGrey700"
+                        android:text="@string/personal_kontak"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        app:customFont="MetroNovaPro-Light.otf"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_contentpersonal_personalinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/ll_topcontent_personal_personalinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        >
+
+                        <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+                            android:id="@+id/civ_personal_personalinfo"
+                            android:layout_width="@dimen/civ_logo_cabang_slide"
+                            android:layout_height="@dimen/civ_logo_cabang_slide"
+                            android:background="@color/colorTransparent"
+                            android:src="@drawable/placeholder"
+                            android:layout_centerInParent="true"
+                            app:stroke_color="@color/colorOrange400"
+                            app:stroke_width="2dp"
+                            app:shape_mode="round_rect"
+                            app:round_radius="15dp"
+                            />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_rekan_personalinfo"
+                            android:layout_width="@dimen/rv_rekan_personalinfo_width"
+                            android:layout_height="@dimen/rv_rekan_personalinfo_height"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_borderpersonal_personalinfo"
+                            android:layout_width="16dp"
+                            android:layout_height="2dp"
+                            android:background="@color/colorOrange400"
+                            android:layout_toLeftOf="@id/civ_personal_personalinfo"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="16dp">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_borderpersonal1_personalinfo"
+                            android:layout_width="2dp"
+                            android:layout_height="16dp"
+                            android:layout_marginTop="40dp"
+                            android:background="@color/colorOrange400"
+                            android:layout_below="@id/civ_personal_personalinfo"
+                            android:layout_centerHorizontal="true">
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_borderpersonal2_personalinfo"
+                            android:layout_width="2dp"
+                            android:layout_height="16dp"
+                            android:layout_marginBottom="-16dp"
+                            android:background="@color/colorOrange400"
+                            android:layout_above="@id/civ_personal_personalinfo"
+                            android:layout_centerHorizontal="true">
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <com.jasamarga.selfservice.customwiget.CustomTextView
+                        android:id="@+id/tv_personal_personalinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorBlueGrey700"
+                        android:text="@string/personal_kontak"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/ll_topcontent_personal_personalinfo"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        app:customFont="MetroNovaPro-Light.otf"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_contentbawahan_personalinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_bawahan_personalinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/sivProfil"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:scaleType="centerCrop"
+        app:layout_anchor="@id/tv_header_personalinfo"
+        app:layout_anchorGravity="bottom|center"
+        app:stroke_color="@color/colorOrange400"
+        app:stroke_width="2dp"
+        app:shape_mode="round_rect"
+        app:round_radius="25dp"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

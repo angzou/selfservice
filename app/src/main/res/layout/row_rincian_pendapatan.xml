@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:id="@+id/llDetailRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvNumberRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text="10. "
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvTitleRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text="Gaji Pokok"
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvColonRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text=":"
+            android:gravity="center"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvDetailRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text="Rp. 20.000.000"
+            android:gravity="right"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBorderRow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:weightSum="10">
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            android:background="@color/colorBlack"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotalRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:weightSum="10">
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Regular.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvTitleTotalRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text=":"
+            android:gravity="center"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvDetailTotalRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:text="Rp. 20.000.000"
+            android:gravity="right"
+            app:customFont="MetroNovaPro-Medium.otf"/>
+
+    </LinearLayout>
+
+</LinearLayout>

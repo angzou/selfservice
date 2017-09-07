@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/llContentLogin"
+    >
+
+    <com.jasamarga.selfservice.customwiget.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="@string/login_header_label"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:customFont="MetroNovaPro-CondensedBold.otf"/>
+
+    <com.jasamarga.selfservice.customwiget.CustomEditText
+        android:id="@+id/edNpp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="Npp"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:background="@drawable/npp_bg"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:customEditTextFont="MetroNovaPro-Light.otf"
+        />
+
+    <com.jasamarga.selfservice.customwiget.CustomEditText
+        android:id="@+id/edPass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="Password portal"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:background="@drawable/npp_bg"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:customEditTextFont="MetroNovaPro-Light.otf"
+        />
+    
+    <com.jasamarga.selfservice.customwiget.CustomButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:text="Login"
+        android:background="@drawable/btn_login_bg"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:customButtonFont="MetroNovaPro-Medium.otf"
+        />
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="2.5dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@drawable/card_bg"
+            android:gravity="center_horizontal"
+            >
+
+            <com.jasamarga.selfservice.customwiget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueGrey900"
+                android:text="RINCIAN PENERIMAAN"
+                android:gravity="left"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                app:customFont="MetroNovaPro-Medium.otf"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="a. Kompensasi Bulanan\n    Tetap"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:layout_marginTop="4dp"
+                    app:customFont="MetroNovaPro-Medium.otf"/>
+
+                <LinearLayout
+                    android:id="@+id/llKompensasiTetap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    >
+
+                </LinearLayout>
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="b. Kompensasi Lainnya"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:layout_marginTop="4dp"
+                    app:customFont="MetroNovaPro-Medium.otf"/>
+
+                <LinearLayout
+                    android:id="@+id/llKompensasiLain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    >
+
+                </LinearLayout>
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="c. Tunjangan Lainnya\n     Iuran dan Pajak"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:layout_marginTop="4dp"
+                    app:customFont="MetroNovaPro-Medium.otf"/>
+
+                <LinearLayout
+                    android:id="@+id/llTunjangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    >
+
+                </LinearLayout>
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:text="d. Lain-lain"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left"
+                    android:layout_marginTop="4dp"
+                    app:customFont="MetroNovaPro-Medium.otf"/>
+
+                <LinearLayout
+                    android:id="@+id/llTunjanganLain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llTotalRincianPenerimaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+            <include layout="@layout/content_footer_rincian" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlack"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

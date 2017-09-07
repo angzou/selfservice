@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_slipgaji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llContainerSlipGaji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_title_slipgaji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/colorOrange400"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tv_header_slipgaji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SLIP GAJI"
+                    android:textColor="@color/colorRedAP"
+                    android:textSize="60sp"
+                    android:shadowColor="@color/colorBlueMicrosoft1"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Bold.otf"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bordertitle_slipgaji"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                >
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="30dp"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvNamaPenerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorWhite"
+                    android:text="-"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-CondensedBold.otf"/>
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvKantorPenerima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorWhite"
+                    android:text="-"
+                    android:layout_marginTop="8dp"
+                    app:customFont="MetroNovaPro-CondensedBold.otf"/>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="33dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/npp_bg">
+
+                    <Spinner
+                        android:id="@+id/spBulanSlipGaji"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="2.5dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/card_bg"
+                >
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Total Gaji"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvTotalPenerimaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Rp. 0"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Total Potongan"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvTotalPotongan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Rp. 0"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Penerimaan Bersih"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tvGajiBersih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Rp. 0"
+                    android:gravity="center_horizontal"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="Nama Bank"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    app:customFont="MetroNovaPro-Medium.otf"
+                    />
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:id="@+id/tv_tempatttl_personalinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorBlueGrey700"
+                    android:text="BANK MANDIRI"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    app:customFont="MetroNovaPro-Regular.otf"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetDetail"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:orientation="vertical"
+        android:background="@color/colorTransparent"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/colorOrange900"
+            >
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="38dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_more"
+                android:contentDescription=""
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorOrange400"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_rinc_pend_slipgaji"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="2dp">
+
+                <ImageView
+                    android:id="@+id/ivRincianPdptan"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription=""
+                    android:src="@drawable/icon_rincian_gaji"/>
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:text="Rincian\nPenerimaan"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    app:customFont="MetroNovaPro-Regular.otf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorWhite">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_rinc_pot_slipgaji"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="4dp">
+
+                <ImageView
+                    android:id="@+id/ivRindianPot"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription=""
+                    android:src="@drawable/icon_rincian_potongan"/>
+
+                <com.jasamarga.selfservice.customwiget.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorWhite"
+                    android:text="Rincian\nPotongan"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    app:customFont="MetroNovaPro-Regular.otf"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

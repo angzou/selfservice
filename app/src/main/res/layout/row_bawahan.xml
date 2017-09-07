@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="114dp" android:layout_height="wrap_content"
+    android:id="@+id/rlRowContainerBawahan" android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    >
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/sivRowProfilBawahan"
+        android:layout_width="@dimen/civ_pict_item_bawahan"
+        android:layout_height="@dimen/civ_pict_item_bawahan"
+        android:background="@color/colorTransparent"
+        android:src="@drawable/placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:stroke_color="@color/colorOrange400"
+        app:stroke_width="2dp"
+        app:shape_mode="round_rect"
+        app:round_radius="7.5dp"
+        />
+
+    <com.jasamarga.selfservice.customwiget.CustomTextView
+        android:id="@+id/tvRowNamaBawahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorBlueGrey700"
+        android:text="@string/personal_kontak"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/sivRowProfilBawahan"
+        android:layout_centerHorizontal="true"
+        app:customFont="MetroNovaPro-Regular.otf"
+        />
+
+</RelativeLayout>

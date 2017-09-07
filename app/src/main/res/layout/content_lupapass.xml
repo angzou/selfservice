@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <com.jasamarga.selfservice.customwiget.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="44sp"
+        android:textStyle="normal"
+        android:textColor="@color/colorWhite"
+        android:text="Lupa Password"
+        app:customFont="MetroNovaPro-CondensedBold.otf"/>
+
+    <com.jasamarga.selfservice.customwiget.CustomEditText
+        android:id="@+id/edEmailForgot"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="Masukkan email atau npp"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionDone"
+        android:background="@drawable/npp_bg"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        app:customEditTextFont="MetroNovaPro-Light.otf"
+        />
+
+    <com.jasamarga.selfservice.customwiget.CustomButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:text="Submit"
+        android:background="@drawable/btn_login_bg"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:customButtonFont="MetroNovaPro-Medium.otf"
+        />
+
+    <com.jasamarga.selfservice.customwiget.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:hint="Masukkan kata sandi"
+        android:maxLines="1"
+        android:inputType="numberPassword"
+        android:imeOptions="actionDone"
+        android:background="@drawable/npp_bg"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:visibility="invisible"
+        app:customEditTextFont="MetroNovaPro-Light.otf"
+        />
+
+</LinearLayout>

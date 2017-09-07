@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp" android:id="@+id/rlRowContainerPersonalInfo">
+
+    <LinearLayout
+        android:id="@+id/llRowProfilPersonalInfo"
+        android:layout_width="@dimen/civ_pict_item_main"
+        android:layout_height="@dimen/civ_pict_item_main"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        >
+
+        <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+            android:id="@+id/sivRowProfilPersonalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            app:stroke_color="@color/colorOrange400"
+            app:stroke_width="2dp"
+            app:shape_mode="round_rect"
+            app:round_radius="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRowKontenPersonalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/llRowProfilPersonalInfo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        >
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvRowNamaPersonalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorBlueGrey700"
+            android:text="@string/personal_name"
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Medium.otf"
+            />
+
+        <com.jasamarga.selfservice.customwiget.CustomTextView
+            android:id="@+id/tvRowJabatanPersonalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorBlueGrey700"
+            android:text="@string/personal_position"
+            android:gravity="left"
+            app:customFont="MetroNovaPro-Regular.otf"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tool_bar_height">48dp</dimen>
+    <dimen name="iv_profile_user">133dp</dimen>
+    <dimen name="ll_title_personalinfo">266dp</dimen>
+    <dimen name="image_width">114dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="rv_rekan_personalinfo_width">72dp</dimen>
+    <dimen name="rv_rekan_personalinfo_height">133dp</dimen>
+    <dimen name="civ_pict_item_bawahan">57dp</dimen>
+    <dimen name="civ_logo_cabang_slide">76dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="civ_pict_item_main">54dp</dimen>
+</resources>

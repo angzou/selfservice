@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center"
+    android:id="@+id/llRowContainerPeer" android:padding="8dp">
+
+    <cn.gavinliu.android.lib.shapedimageview.ShapedImageView
+        android:id="@+id/sivRowProfilPeer"
+        android:layout_width="@dimen/civ_pict_item_main"
+        android:layout_height="@dimen/civ_pict_item_main"
+        android:background="@color/colorTransparent"
+        android:src="@drawable/placeholder"
+        app:stroke_color="@color/colorOrange400"
+        app:stroke_width="2dp"
+        app:shape_mode="round_rect"
+        app:round_radius="7.5dp"
+        />
+
+</LinearLayout>
